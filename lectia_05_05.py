@@ -89,11 +89,11 @@
 #     # # --------------------- Exercitiul 12 ---------------------
 #     # print("\nExercitiul 12: Scrie mai multe linii in fisier folosind o lista.")
 #     # # Solutia:
-li = [344, "fgggg", True, 1999, ["cico"]]
-li = [str(x)+"\n" for x in li]
+# li = [344, "fgggg", True, 1999, ["cico"]]
+# li = [str(x)+"\n" for x in li]
 
-with open("Artur.txt", "w") as f:
-    f.writelines(li)
+# with open("Artur.txt", "w") as f:
+#     f.writelines(li)
 #     # --------------------- Exercitiul 13 ---------------------
 #     print("\nExercitiul 13: Citeste un numar specific de caractere din fisier.")
 #     # Solutia:
