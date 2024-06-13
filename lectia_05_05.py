@@ -1,6 +1,6 @@
 
-# if __name__=="__main__":
-#     print("Bun venit la lectia 05.04 - lucru cu fisiere, modulul os, modulul json")
+if __name__ == "__main__":
+    print("Bun venit la lectia 05.04 - lucru cu fisiere, modulul os, modulul json")
 
 
 #     # ==================== LUCRUL CU FISIERE ====================
@@ -134,24 +134,44 @@
 #     # # --------------------- Exercitiul 23 ---------------------
 #     # print("\nExercitiul 23: Obtine informatii despre pozitia curenta a cursorului folosind functia tell().")
 #     # # Solutia:
-#     #
-#     #
+# with open("Artur.txt", "r") as f:
+#     print(f.read(4))
+#     print(f.tell())
+# #     #
+# #     #
 
 #     # # ==================== MODULUL OS ====================
 #     # --------------------- Exercitiul 1 ---------------------
 #     print("Obtineti si afisati directorul curent de lucru.")
 #     # Solutia:
+import os
+# print(os.getcwd)
 
 #     # --------------------- Exercitiul 2 ---------------------
-#     print("Creati un nou director numit 'test_dir' in directorul curent.")
+# print("Creati un nou director numit 'test_dir' in directorul curent.")
+# if os.path.exists("test_dir"):
+#     pass
+# else:
+#     os.mkdir("test_dir")
+# # SAU Varianata II:
+# try:
+#     os.mkdir("test_dir")
+# except:
+#     pass
+
 
 #     # --------------------- Exercitiul 3 ---------------------
 #     print("Redenumiti un fisier 'old_name.txt' in 'new_name.txt'.")
 #     # Solutia:
-
+# with open("old_name.txt", "x+") as f:
+#     print(f.write("Hello"))
+# os.rename("old_name.txt", "new_name.txt")
+# os.remove("new_name.txt")
 #     # --------------------- Exercitiul 4 ---------------------
 #     print("Verificati daca un fisier numit 'test_file.txt' exista in directorul curent.")
 #     # Solutia:
+# f = os.path.exists("test_file.txt")
+# print(f)
 
 #     # --------------------- Exercitiul 5 ---------------------
 #     print("Listati toate fisierele si folderele din directorul curent.")
