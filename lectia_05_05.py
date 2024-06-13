@@ -153,11 +153,6 @@ import os
 #     pass
 # else:
 #     os.mkdir("test_dir")
-# # SAU Varianata II:
-# try:
-#     os.mkdir("test_dir")
-# except:
-#     pass
 
 
 #     # --------------------- Exercitiul 3 ---------------------
@@ -176,28 +171,40 @@ import os
 #     # --------------------- Exercitiul 5 ---------------------
 #     print("Listati toate fisierele si folderele din directorul curent.")
 #     # Solutia:
-
+# print(os.listdir())
 #     # --------------------- Exercitiul 6 ---------------------
 #     print("Obtineti si afisati informatii despre sistemul de operare.")
 #     # Solutia:
+# import platform
+# print(platform.mac_ver())
 
 #     # --------------------- Exercitiul 7 ---------------------
-#     print("Creati un set de directoare imbricate 'folder/subfolder/nume'.")
-#     # Solutia:
+#    print("Creati un set de directoare imbricate 'folder/subfolder/nume'.")
+# Solutia:
+
+# Solutia:
+# print(os.makedirs("folder/subfolder/nume"))
 
 #     # --------------------- Exercitiul 8 ---------------------
 #     print("Stergeti fisierul 'temp.txt'. Daca nu exista, afisati un mesaj corespunzator.")
 #     # Solutia:
+# if os.path.exists("binar"):
+#     os.remove("binar")
+# else:
+#     print("Acest fisier nu exista")
 
 #     # --------------------- Exercitiul 9 ---------------------
 #     print("Stergeti recursiv directoarele 'folder/subfolder/nume'.")
 #     # Solutia:
+# os.removedirs("folder/subfolder/nume")
 
 #     # # --------------------- Exercitiul 10 ---------------------
 #     # print("Alipiti numele de fisier 'file.txt' la calea 'dir/subdir' folosind os.path.join.")
 #     # # Solutia:
+# print(os.path.join("dir/subdir", "file.txt"))
 
 #     # --------------------- Exercitiul 11 ---------------------
 #     print(
 #         "Obtineti dimensiunea fisierului 'example.txt' in bytes. Daca fisierul nu exista, afisati un mesaj corespunzator.")
 #     # Solutia:
+# print(os.path.getsize("file.txt"))
