@@ -89,31 +89,48 @@
 #     # # --------------------- Exercitiul 12 ---------------------
 #     # print("\nExercitiul 12: Scrie mai multe linii in fisier folosind o lista.")
 #     # # Solutia:
-li = [344, "fgggg", True, 1999, ["cico"]]
-li = [str(x)+"\n" for x in li]
+# li = [344, "fgggg", True, 1999, ["cico"]]
+# li = [str(x)+"\n" for x in li]
 
-with open("Artur.txt", "w") as f:
-    f.writelines(li)
+# with open("Artur.txt", "w") as f:
+#     f.writelines(li)
 #     # --------------------- Exercitiul 13 ---------------------
 #     print("\nExercitiul 13: Citeste un numar specific de caractere din fisier.")
 #     # Solutia:
+# with open("Artur.txt", "r") as f:
+
+# print(f.read(5))
+# print(f.seek(5))-sare peste 5 caractere
+
 
 #     # --------------------- Exercitiul 14 ---------------------
 #     print("\nExercitiul 14: Muta cursorul la inceputul fisierului dupa scriere.")
 #     # Solutia:
+# with open("file.txt", "w+") as f:
+#     f.write("Am incercat sa scriu")
+#     print(f.seek(1))
+#     f.write("cursor")
+#     print(f.read())
+
 
 #     # --------------------- Exercitiul 15 ---------------------
 #     print("\nExercitiul 15: Deschide un fisier pentru scriere binara.")
 #     # Solutia:
+# with open("binar", "wb") as f:
+#     f.write(b"scriem binar")
 
 #     # --------------------- Exercitiul 16 ---------------------
 #     print("\nExercitiul 16: Citeste continutul unui fisier binar.")
 #     # Solutia:
+# with open("binar", "rb") as f:
+#     print(f.read())
 
 #     # --------------------- Exercitiul 20 ---------------------
 #     print("\nExercitiul 20: Foloseste modul '+' pentru a deschide un fisier pentru actualizare (citire si scriere).")
 #     # Solutia:
-
+# with open("Artur.txt", "w+") as f:
+#     f.write("ma dddddssss")
+#     print(f.read(5))
 #     # # --------------------- Exercitiul 23 ---------------------
 #     # print("\nExercitiul 23: Obtine informatii despre pozitia curenta a cursorului folosind functia tell().")
 #     # # Solutia:
